@@ -12,6 +12,8 @@ import {
   View
 } from 'react-native';
 import HelloWorldApp from './HelloWorld';
+import Bananas from './bananas';
+import LotsOfGreetings from './hello_name';
 
 const instructions = Platform.select({
   ios: 'Press Cmd+R to reload,\n' +
@@ -23,8 +25,10 @@ const instructions = Platform.select({
 type Props = {};
 export default class App extends Component<Props> {
   render() {
-    return (
-      <HelloWorldApp style={styles.hello}/>
+    return ([
+      <Bananas />,
+      <LotsOfGreetings />
+      // <HelloWorldApp style={styles.hello}/>
       // <View style={styles.container}>
       //   <Text style={styles.welcome}>
       //     Welcome to React Native!
@@ -36,7 +40,7 @@ export default class App extends Component<Props> {
       //     {instructions}
       //   </Text>
       // </View>
-    );
+    ]);
   }
 }
 
