@@ -11,9 +11,12 @@ import {
   Text,
   View
 } from 'react-native';
+
 import HelloWorldApp from './HelloWorld';
 import Bananas from './bananas';
 import LotsOfGreetings from './hello_name';
+import Blink from './blink';
+import LotsOfStyles from './lots_of_styles';
 
 const instructions = Platform.select({
   ios: 'Press Cmd+R to reload,\n' +
@@ -27,7 +30,9 @@ export default class App extends Component<Props> {
   render() {
     return ([
       <Bananas />,
-      <LotsOfGreetings />
+      <LotsOfStyles />
+      // <LotsOfGreetings />,
+      // <Blink />
       // <HelloWorldApp style={styles.hello}/>
       // <View style={styles.container}>
       //   <Text style={styles.welcome}>
