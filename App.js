@@ -19,6 +19,7 @@ import Blink from './blink';
 import LotsOfStyles from './lots_of_styles';
 import FixedDimensionsBasics from './fixed_dimensions';
 import FlexDirectionBasics from './flex_direction';
+import JustifyContent from './justify_content';
 
 const instructions = Platform.select({
   ios: 'Press Cmd+R to reload,\n' +
@@ -31,7 +32,8 @@ type Props = {};
 export default class App extends Component<Props> {
   render() {
     return ([
-      <FlexDirectionBasics/>,
+      <JustifyContent/>,
+      // <FlexDirectionBasics/>,
       // <FixedDimensionsBasics/>,
       // <Bananas />,
       // <LotsOfStyles />
