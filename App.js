@@ -21,6 +21,7 @@ import FixedDimensionsBasics from './fixed_dimensions';
 import FlexDirectionBasics from './flex_direction';
 import JustifyContent from './justify_content';
 import AlignItemsBasics from './align_items';
+import PizzaTranslator from './text_input';
 
 const instructions = Platform.select({
   ios: 'Press Cmd+R to reload,\n' +
@@ -33,7 +34,8 @@ type Props = {};
 export default class App extends Component<Props> {
   render() {
     return ([
-      <AlignItemsBasics/>,
+      <PizzaTranslator/>,
+      // <AlignItemsBasics/>,
       // <JustifyContent/>,
       // <FlexDirectionBasics/>,
       // <FixedDimensionsBasics/>,
