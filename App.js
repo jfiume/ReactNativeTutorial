@@ -24,6 +24,7 @@ import AlignItemsBasics from './align_items';
 import PizzaTranslator from './text_input';
 import ButtonBasics from './button_basics';
 import Touchables from './touchables';
+import IScrolledDownAndWhatHappenedNextShockedMe from './scroll_views';
 
 const instructions = Platform.select({
   ios: 'Press Cmd+R to reload,\n' +
@@ -36,7 +37,8 @@ type Props = {};
 export default class App extends Component<Props> {
   render() {
     return ([
-      <Touchables/>,
+      <IScrolledDownAndWhatHappenedNextShockedMe/>,
+      // <Touchables/>,
       // <ButtonBasics/>,
       // <PizzaTranslator/>,
       // <AlignItemsBasics/>,
