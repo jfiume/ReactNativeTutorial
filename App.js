@@ -25,6 +25,7 @@ import PizzaTranslator from './text_input';
 import ButtonBasics from './button_basics';
 import Touchables from './touchables';
 import IScrolledDownAndWhatHappenedNextShockedMe from './scroll_views';
+import FlatListBasics from './flat_list';
 
 const instructions = Platform.select({
   ios: 'Press Cmd+R to reload,\n' +
@@ -37,7 +38,8 @@ type Props = {};
 export default class App extends Component<Props> {
   render() {
     return ([
-      <IScrolledDownAndWhatHappenedNextShockedMe/>,
+      <FlatListBasics/>,
+      // <IScrolledDownAndWhatHappenedNextShockedMe/>,
       // <Touchables/>,
       // <ButtonBasics/>,
       // <PizzaTranslator/>,
